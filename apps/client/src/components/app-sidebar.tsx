@@ -127,9 +127,9 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
                     <AvatarFallback>JD</AvatarFallback>
                   </Avatar>
                   <div className="flex flex-col items-start text-left">
-                    <span className="text-sm font-medium">Jane Doe</span>
+                    <span className="text-sm font-medium">Meme Tu</span>
                     <span className="text-xs text-muted-foreground">
-                      jane.doe@example.com
+                      meme.tu@example.com
                     </span>
                   </div>
                 </SidebarMenuButton>
