@@ -42,13 +42,10 @@
 ### Backend
 
 - /health: Health check for backend, database, and providers
--
 
 ### Database
 
 Schema:
-
--
 
 ### Storage Providers (S3)
 
