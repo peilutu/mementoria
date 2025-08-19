@@ -1,3 +1,9 @@
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { Separator } from "@/components/ui/separator";
 import { createFileRoute } from "@tanstack/react-router";
 import {
   Camera,
@@ -36,15 +42,16 @@ import { Separator } from "@/components/ui/separator";
 import { Switch } from "@/components/ui/switch";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
+
 export const Route = createFileRoute("/app/settings/")({
   component: SettingsPage,
 });
 
 function SettingsPage() {
   const [profileData, setProfileData] = useState({
-    firstName: "Meme",
-    lastName: "Tu",
-    email: "meme.tu@example.com",
+    firstName: "Jane",
+    lastName: "Doe",
+    email: "jane.doe@example.com",
     bio: "Digital scrapbook enthusiast and memory keeper. Love capturing life's precious moments through photos and stories.",
     location: "San Francisco, CA",
     website: "https://meme-tu.com",
@@ -141,9 +148,11 @@ function SettingsPage() {
           className="flex items-center gap-2"
         >
           <Save className="h-4 w-4" />
+
           Save Changes
         </Button>
       </div>
+
 
       <Tabs defaultValue="profile" className="space-y-6">
         <TabsList className="grid w-full grid-cols-5">
@@ -730,7 +739,6 @@ function SettingsPage() {
                   </Button>
                 </div>
               </div>
-
               <Alert>
                 <Globe className="h-4 w-4" />
                 <AlertDescription>
@@ -743,6 +751,7 @@ function SettingsPage() {
           </Card>
         </TabsContent>
       </Tabs>
+
     </div>
   );
 }
