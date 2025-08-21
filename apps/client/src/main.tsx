@@ -6,6 +6,7 @@ import { routeTree } from "./routeTree.gen";
 
 import "./styles.css";
 import "@fontsource-variable/source-serif-4/opsz.css";
+import { Toaster } from "sonner";
 import reportWebVitals from "./reportWebVitals.ts";
 
 const router = createRouter({
@@ -29,6 +30,7 @@ if (rootElement && !rootElement.innerHTML) {
   root.render(
     <StrictMode>
       <RouterProvider router={router} />
+      <Toaster />
     </StrictMode>,
   );
 }
